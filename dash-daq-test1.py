@@ -1,6 +1,6 @@
 # https://www.dashdaq.io/
 # https://www.dashdaq.io/python-data-acquisition
-
+# Need to be deployed into a server, or it will be used only locally
 
 import dash
 
@@ -75,4 +75,4 @@ def change_bg(dark_theme):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=False, port=8083, host='localhost' )
